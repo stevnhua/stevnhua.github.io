@@ -65,7 +65,7 @@ section .circle {
 }
 
 .content .imgBox {
-    width: 600px;
+    width: 700px;
     display: flex;
     justify-content: flex-end;
     padding-right: 50px;
@@ -73,7 +73,7 @@ section .circle {
 }
 .content .imgBox img{
     width: 100%;
-    max-width: 500px;
+    max-width: 700px;
     min-width: 300px;
     height: auto;
     z-index: 1;
@@ -135,6 +135,3 @@ header .nav__list li a:hover {
     position: absolute;
     right: 40px;
 } */
-
-
-
