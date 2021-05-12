@@ -4,27 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Steven Hua's Website</title>
+    <title>Steven Hua's Portfolio</title>
+    <!-- STYLE LINKS -->
     <link rel = "stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 
 <body>
     
-    <section>
+    <section class = "landing">
 
         <div class="circle"></div>
+        <div class="background"></div>
         
-        <header>
+        <header id = "nav-area">
             <!-- NAV BAR -->
             <a href = "index.html" class = "logo">Steven Hua</a>
+            <div class="toggle" onclick="toggleMenu()"></div>
             <ul class = "nav__list">
-                <li><a href = "about.html" class = "nav__link">About</a></li>
                 <li><a href = "projects.html" class = "nav__link">Projects</a></li>
                 <li><a href = "contact.html" class = "nav__link">Contact</a></li>
                 <li><a href = "resume.pdf" class = "nav__link">Resume</a></li>
+            </ul>
         </header>
 
         <!-- LANDING PAGE -->
@@ -40,14 +45,47 @@
             </div>
         </div>
 
-        <!-- <ul class = "socials">
-            <li><a href = "#"><img src = "img/linkedin.svg"></a></li>
-            <li><a href = "#"><img src = "img/twitter.svg"></a></li>
-            <li><a href = "#"><img src = "img/email.svg"></a></li>
-        </ul> -->
     </section>
 
-    <section class = "next">
+    <section class = "about">
+
+        <div class="about--title">
+            <h2>It's nice to meet you!<br>Here's a bit more about me.</h2>
+            <p>I'm a second year student at the <span>University of Toronto</span> , and I'm passionate in all things Web Development
+                and Data/Statistical Analysis! Use the scroller to see some technologies I have been learning and working
+                with recently!</p>
+        </div>
+
+        <div class = "sliderBox">
+            <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                    <img src="img/about-logos/css.png" />
+                    </div>
+                    <div class="swiper-slide">
+                    <img src="img/about-logos/html5.png" />
+                    </div>
+                    <div class="swiper-slide">
+                    <img src="img/about-logos/javascript.png" />
+                    </div>
+                    <div class="swiper-slide">
+                    <img src="img/about-logos/office.png" />
+                    </div>
+                    <div class="swiper-slide">
+                    <img src="img/about-logos/python.png" />
+                    </div>
+                    <div class="swiper-slide">
+                    <img src="img/about-logos/r.png" />
+                    </div>
+                    <div class="swiper-slide">
+                    <img src="img/about-logos/react.png" />
+                    </div>
+                    <div class="swiper-slide">
+                    <img src="img/about-logos/sql.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </section>
 
@@ -71,8 +109,13 @@
         integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" 
         crossorigin="anonymous">
     </script>
+
+    <!-- SWIPER -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     
     <!-- SCRIPT.JS FILE -->
     <script src = "javascript/script.js"></script>
+    
+    
 </body>
 </html>
