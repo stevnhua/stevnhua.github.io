@@ -1,6 +1,11 @@
+// LOADING ANIMATION
+
+
+// LANDING POINT ANIMATION
+
 document.addEventListener('DOMContentLoaded',function(event){
     // array with texts to type in typewriter
-    var dataText = [ "Applied Statistics -", "Computer Science -"];
+    var dataText = [ "Applied Statistics", "Computer Science"];
     
     // type one text in the typwriter
     // keeps calling itself until the text is finished
@@ -40,3 +45,44 @@ document.addEventListener('DOMContentLoaded',function(event){
     // start the text animation
     StartTextAnimation(0);
   });
+
+// NAV BAR JS
+function toggleMenu() {
+  const menuToggle = document.querySelector('.toggle');
+  const nav__list = document.querySelector('.nav__list');
+  menuToggle.classList.toggle('active')
+  nav__list.classList.toggle('active')
+}
+
+var lastScrollTop = 0;
+  navbar = document.getElementById("nav-area");
+window.addEventListener("scroll", function(){
+  var scrollTop = window.pageYOffset || document
+    .documentElement.scrollTop;
+  if (scrollTop > lastScrollTop) {
+    navbar.style.top = "-80px";
+  }
+  else {
+    navbar.style.top = "0";
+  }
+  lastScrollTop = scrollTop;
+  })
+
+// SWIPER
+var swiper = new Swiper(".mySwiper", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 200,
+    modifier: 1,
+    slideShadows: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  loop: true,
+});
