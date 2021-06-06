@@ -281,13 +281,11 @@ header .nav__list li a:hover {
     }
     .content .textBox .title, .about .about--title h2{
         font-size: 2rem;
+        max-width: 100%;
     }
     .content .textBox .subtitle, .about .about--title p{
         font-size: 1.1rem;
-    }
-    .content .textBox,
-    .content .imgBox{
-        max-width: 70%;
+        max-width: 100%;
     }
     
     .about .about--title p {
