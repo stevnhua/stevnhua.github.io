@@ -166,7 +166,6 @@ header .nav__list li a:hover {
     position: relative;
     color: white;
     max-width: 900px;
-    padding-right: 50px;
 }
 
 .about--title h2 {
@@ -237,6 +236,9 @@ header .nav__list li a:hover {
 
 /* MAKING THINGS RESPONSIVE FOR SIZING */
 @media (max-width: 1550px){
+    .landing {
+        padding: 0px;
+    }
     header {
         padding: 40px;
     }
@@ -246,12 +248,10 @@ header .nav__list li a:hover {
     .content, .about {
         flex-direction: column;
     }
-    .content .textBox, .about .about--title {
+    .content .textBox, .about .about--title{
         margin-top: 80px;
         position: relative;
         text-align: center;
-    }
-    .content .textBox, .about .sliderBox{
         font-size: 3rem;
         max-width: 100%;
     }
@@ -262,16 +262,19 @@ header .nav__list li a:hover {
     .content .imgBox{
         max-width: 70%;
     }
-    .about--title {
-        padding-left: 50px;
-    }
     .swiper-slide {
         height: 300px;
+    }
+
+    .sliderBox {
+        max-width: 100%;
     }
 }
 
 @media (max-width: 950px){
-
+    .landing {
+        padding: 0px;
+    }
     .content .textBox {
         text-align: center;
         margin-top: 60px;
@@ -282,15 +285,21 @@ header .nav__list li a:hover {
     }
     .content .textBox .subtitle, .about .about--title p{
         font-size: 1.1rem;
+        max-width: 100%;
     }
     
     .about .about--title p {
         width: 500px;
     }
 
+    .sliderBox {
+        max-width: 100%;
+    }
+
     header .nav__list {
         left: 40px;
         display: none;
+        max-width: 100%;
     }
     header .nav__list.active {
         display: flex;
