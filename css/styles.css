@@ -292,6 +292,7 @@ header .nav__list li a:hover {
     .content .textBox .subtitle, .about .about--title p{
         font-size: 1.1rem;
         max-width: 100%;
+        padding-top: 40px;
     }
     
     .content .imgBox {
