@@ -247,10 +247,14 @@ header .nav__list li a:hover {
         flex-direction: column;
     }
     .content .textBox, .about .about--title{
-        margin-top: 80px;
         position: relative;
         text-align: center;
         font-size: 3rem;
+        max-width: 100%;
+    }
+
+    .content .imgBox, .sliderBox {
+        position: relative;
         max-width: 100%;
     }
     .content .textBox .subtitle {
@@ -267,23 +271,9 @@ header .nav__list li a:hover {
 }
 
 @media (max-width: 950px){
-    header {
-        padding: 40px;
-    }
-    section, .about {
-        padding: 150px 40px;
-    }
-    .landing {
-        padding: 0px;
-    }
-    .content .textBox {
-        text-align: center;
-        margin-top: 60px;
-    }
     .content .textBox .title, .about .about--title h2{
         font-size: 2rem;
         max-width: 100%;
-        padding-top: 40px;
     }
     .content .textBox .subtitle, .about .about--title p{
         font-size: 1.1rem;
@@ -291,10 +281,6 @@ header .nav__list li a:hover {
     }
 
     .content .imgBox {
-        max-width: 100%;
-    }
-
-    .sliderBox {
         max-width: 100%;
     }
 
