@@ -272,6 +272,12 @@ header .nav__list li a:hover {
 }
 
 @media (max-width: 950px){
+    header {
+        padding: 40px;
+    }
+    section, .about {
+        padding: 150px 40px;
+    }
     .landing {
         padding: 0px;
     }
