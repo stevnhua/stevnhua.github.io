@@ -294,6 +294,10 @@ header .nav__list li a:hover {
         max-width: 100%;
     }
     
+    .content .imgBox {
+        max-width: 100%;
+    }
+    
     .about .about--title p {
         width: 500px;
     }
