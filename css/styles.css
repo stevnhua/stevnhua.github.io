@@ -144,8 +144,7 @@ header .nav__list li a:hover {
     margin-bottom: 50px;
 }
 .content .imgBox img{
-    width: 100%;
-    max-width: 700px;
+    max-width: 100%;
     height: auto;
     z-index: 1;
 }
@@ -257,10 +256,7 @@ header .nav__list li a:hover {
     .content .textBox .subtitle {
         font-size: 1.5rem;
     }
-    .content .textBox,
-    .content .imgBox{
-        max-width: 70%;
-    }
+
     .swiper-slide {
         height: 300px;
     }
@@ -296,10 +292,6 @@ header .nav__list li a:hover {
 
     .content .imgBox {
         max-width: 100%;
-    }
-    
-    .about .about--title p {
-        width: 500px;
     }
 
     .sliderBox {
