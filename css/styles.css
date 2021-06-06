@@ -135,7 +135,7 @@ header .nav__list li a:hover {
 }
 
 .content .imgBox {
-    width: 700px;
+    max-width: 700px;
     display: flex;
     justify-content: center;
     padding-right: 50px;
@@ -146,7 +146,6 @@ header .nav__list li a:hover {
 .content .imgBox img{
     width: 100%;
     max-width: 700px;
-    min-width: 300px;
     height: auto;
     z-index: 1;
 }
@@ -288,13 +287,13 @@ header .nav__list li a:hover {
     .content .textBox .title, .about .about--title h2{
         font-size: 2rem;
         max-width: 100%;
+        padding-top: 40px;
     }
     .content .textBox .subtitle, .about .about--title p{
         font-size: 1.1rem;
         max-width: 100%;
-        padding-top: 40px;
     }
-    
+
     .content .imgBox {
         max-width: 100%;
     }
