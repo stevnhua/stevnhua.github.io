@@ -137,14 +137,10 @@ header .nav__list li a:hover {
   max-width: 700px;
   display: flex;
   justify-content: center;
-  padding-right: 50px;
-  padding-left: 50px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  padding: 50px;
 }
 .content .imgBox img {
   max-width: 100%;
-  height: auto;
   z-index: 1;
 }
 
@@ -253,7 +249,10 @@ header .nav__list li a:hover {
     text-align: center;
     font-size: 3rem;
     max-width: 100%;
-    padding-top: 150px;
+  }
+
+  .content .textBox {
+    padding-top: 100px;
   }
 
   .content .imgBox,
