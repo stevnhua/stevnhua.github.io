@@ -238,6 +238,7 @@ header .nav__list li a:hover {
   section,
   .about {
     padding: 150px 40px;
+    height: auto;
   }
   .content,
   .about {
